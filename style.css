@@ -39,6 +39,14 @@ nav {
   height: 5.25rem;
 }
 
+.logins {
+  display: fixed;
+  width: 80px;
+}
+.hidden {
+  display: none;
+}
+
 .login {
   display: flex;
 }
