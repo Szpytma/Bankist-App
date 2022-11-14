@@ -1,4 +1,4 @@
-# [Bankist-App](https://szpytma.github.io/Bankist-App/)
+# [Bankist-App](https://bankist-app-theta.vercel.app/)
 
 This small banking app was built using mainly the array functions and DOM.
 
