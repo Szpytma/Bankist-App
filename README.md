@@ -1,14 +1,25 @@
 # [Bankist-App](https://szpytma.github.io/Bankist-App/)
 
-This small banking app is built using mainly the array functions and DOM. 
+This small banking app was built using mainly the array functions and DOM. 
+# Important
 
-To play around you can log in to 4 different accounts by using following logins/ pins
-- ps / 1111
-- jd / 2222
-- stw / 3333
-- ss / 4444
+## How to Login
 
-1. You can transfer money to the other accounts 
-2. You can request a loan based on your interest rate
-3. close the account 
-4. TBC - after 5 minutes account will be logged out
+User : ps <br/>
+Pin: 1111
+
+User : jd <br/>
+Pin: 2222
+
+User : stw <br/>
+Pin: 3333
+
+User : ss <br/>
+Pin: 4444
+
+---
+## ⭐ Features
+- [x] Transfer money
+- [x] request loan based on the account interest rate
+- [x] close account
+- [x] Login, Logout
