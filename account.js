@@ -209,10 +209,11 @@ const startLogOutTimer = function () {
       clearInterval(timer);
       labelWelcome.textContent = 'Log in to get started';
       containerApp.style.opacity = 0;
+      window.location = 'index.html';
     }
     time--;
   };
-  let time = 300;
+  let time = 10;
   tick();
   const timer = setInterval(tick, 1000);
   return timer;
