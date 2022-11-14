@@ -131,7 +131,7 @@ const formatCur = function (value, locale, currency) {
 
 const displayMovements = function (acc, sort = false) {
   containerMovements.innerHTML = '';
-  //TODO: fix sorting method
+
   const movs = sort
     ? acc.movements.slice().sort((a, b) => a - b)
     : acc.movements;
@@ -201,15 +201,14 @@ const updateUI = function (acc) {
 
 const startLogOutTimer = function () {
   const tick = function () {
-    const min = String(Math.trunc(time / 60)).padStart(2, '0');
-    const sec = String(time % 60).padStart(2, '0');
+    const min = String(Math.trunc(time / 60)).padStart(2, 0);
+    const sec = String(time % 60).padStart(2, 0);
     labelTimer.textContent = `${min}:${sec}`;
     // When 0seconds, stop timer and log out user
     if (time === 0) {
       clearInterval(timer);
-
+      labelWelcome.textContent = 'Log in to get started';
       containerApp.style.opacity = 0;
-      labelWelcome.textContent = `Log in to get started`;
     }
     time--;
   };
@@ -256,7 +255,7 @@ btnLogin.addEventListener('click', function (e) {
     inputLoginUsername.value = inputLoginPin.value = '';
     inputLoginPin.blur();
 
-    // Log out timer
+    // Timer
     if (timer) clearInterval(timer);
     timer = startLogOutTimer();
 
