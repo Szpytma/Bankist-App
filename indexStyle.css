@@ -141,6 +141,12 @@ img {
   list-style: none;
 }
 
+.login__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
 .nav__item {
   margin-left: 2rem;
 }
